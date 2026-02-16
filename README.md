@@ -14,6 +14,7 @@ flowchart LR
     W1
     W2
   end
+```
 
 ## Comando para ejecutar la infraestructura
 docker compose up -d
