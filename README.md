@@ -5,11 +5,11 @@ Daniel Fernando Ixcot Nimatuj 202308026
 
 ```mermaid
 flowchart LR
-  U[Usuario / Navegador] -->|HTTP :8080| LB[Nginx Load Balancer (lb)]
-  LB -->|Round Robin| W1[Web Server 1 (web1)]
-  LB -->|Round Robin| W2[Web Server 2 (web2)]
+  U[Usuario / Navegador] --> LB[Load Balancer lb]
+  LB --> W1[Web Server 1 web1]
+  LB --> W2[Web Server 2 web2]
 
-  subgraph Docker_Network_labnet
+  subgraph labnet
     LB
     W1
     W2
